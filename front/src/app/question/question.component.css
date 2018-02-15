@@ -1,0 +1,48 @@
+section{
+  background-color: lightgray;
+
+}
+
+#info{
+  background-color: silver;
+  border: 0.25em;
+
+}
+
+#nav{
+  text-align: left;
+}
+
+#logout{
+  text-align: right;
+}
+
+
+button{
+  height:1.5em;
+  width: 8em;
+  font-size: 1em;
+}
+
+a{
+  color: blue;
+}
+
+.inputs{
+  width:55%;
+  padding:15px;
+  display:inline-block}
+
+label{
+  margin:0.25em 0;
+  display:inline-block;
+  width:100%
+}
+input{
+  float:right;
+  width:300px
+}
+textarea{
+  float: right;
+}
+

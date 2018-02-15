@@ -1,0 +1,35 @@
+<section>
+  <div id="nav">
+    <a [routerLink]="['/home']">Home</a> | <a [routerLink]="['/new_question']">Add a Question</a>
+  </div>
+  <div id = "logout">
+      <a href="/log_out">Log Out</a>
+  </div>
+
+
+  <div id="info">
+    <p *ngIf='new_score'>{{new_score}} </p>
+    <h3 *ngIf='message'><strong>{{message}}</strong></h3>
+  </div>
+
+  <div id="game">
+    <a [routerLink]="['/play']"><button>Play!</button></a>
+    <p>Click button to start the trivia game</p>
+  </div>
+
+  <div id="scores">
+    <p> Search: <input type="search" name="search" [(ngModel)]='search_word'></p>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Score</th>
+        <th>Percentage</th>
+      </tr>
+      <tr *ngFor='let user of all_users'>
+        <td>{{user.name}}</td>
+        <td>{{user.score}} / 3</td>
+        <td>{{user.percent | percent}}</td>
+      </tr>
+    </table>
+  </div>
+</section>

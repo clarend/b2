@@ -1,0 +1,54 @@
+section{
+  background-color: lightgray;
+  text-align: center;
+}
+
+#info{
+  background-color: silver;
+  border: 0.25em;
+
+}
+
+#nav{
+  text-align: left;
+}
+
+#logout{
+  text-align: right;
+}
+
+#game {
+  background-color: black;
+  width: 30em;
+  margin:3em auto;
+  padding: 1em;
+  border: 0.25em solid black;
+  background-color: whitesmoke;
+
+}
+button{
+  height:1.5em;
+  width: 6em;
+  font-size: 1em;
+
+  background-color: blue;
+  color: white;
+}
+
+p{
+  text-align: center;
+}
+
+a{
+  color: blue;
+}
+
+#scores{
+  width:600px;
+  margin:0 auto}
+
+table{
+  margin: 0 auto;
+  border: 0.125 em solid black;
+}
+

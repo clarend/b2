@@ -1,0 +1,36 @@
+
+section{
+  background-color: white;
+
+}
+
+#info{
+  background-color: silver;
+  border: 0.25em;
+
+}
+
+
+#buttn{
+  margin: 25em auto;
+}
+
+button{
+  height:1.5em;
+  width: 6em;
+  font-size: 1em;
+
+}
+
+
+a{
+  color: blue;
+}
+
+
+label{
+  margin: 0 auto;
+  border: 0.125 em solid black;
+}
+
+

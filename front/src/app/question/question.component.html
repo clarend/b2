@@ -1,0 +1,33 @@
+<section>
+    <div id="nav">
+        <a [routerLink]="['/home']">Home</a> | <a [routerLink]="['/new_question']">Add a Question</a>
+    </div>
+    <div id = "logout">
+        <a href="/log_out">Log Out</a>
+    </div>
+
+  <h3>New Question</h3>
+  <div class="inputs">
+    <form #form='ngForm' (submit)='post_data()'>
+      <label>
+        Question:
+        <textarea name="question" rows="8" cols="80" [(ngModel)]='new_question.question' #qst='ngModel' required minlength='15'></textarea>
+      </label>
+      <span *ngIf='qst.invalid'>Must be at least 15 characters</span>
+      <label>
+        Correct Answer:
+        <input type="text" name="correctAns" [(ngModel)]='new_question.correctAns' #ans1='ngModel'>
+      </label>
+      <label>
+        Fake Answer 1:
+        <input type="text" name="fakeAns1" [(ngModel)]='new_question.fakeAns1' #ans2='ngModel'>
+      </label>
+      <label>
+        Fake Answer 2:
+        <input type="text" name="fakeAns2" [(ngModel)]='new_question.fakeAns2' #ans3='ngModel'>
+      </label>
+      <button (click)='go_home()'>Cancel</button><br>
+      <button type="submit" [disabled]='form.invalid'>Add Question</button>
+    </form>
+  </div>
+</section>
